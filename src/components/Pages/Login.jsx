@@ -9,7 +9,7 @@ function Login() {
     
   return (
    <div className=' flex justify-center h-screen items-center'>
-      <div className='h-auto w-90  flex-col flex gap-10 rounded-md shadow-lg'>
+      <div className='h-auto w-90 shadow-purple-400 flex-col flex gap-10 rounded-md shadow-lg'>
         <h1 className='font-bold text-3xl text-purple-400 text-center mt-5'>Login Acoount</h1>
 
         <form
