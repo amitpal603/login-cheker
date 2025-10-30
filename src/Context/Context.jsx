@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
+import { useNavigate } from 'react-router-dom'
 
 
 export const Autho = createContext()
@@ -10,7 +11,6 @@ export function Context({ children }) {
   const { register, handleSubmit, reset } = useForm()
   const [signData, setSignData] = useState([])
   const [logData, setLogData] = useState([])
-
   // Signup handler
   const HandleSign = (data) => {
     setSignData([...signData, data])
